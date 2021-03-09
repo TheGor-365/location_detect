@@ -5,7 +5,7 @@ class PublicController < ApplicationController
       @country = request.location.country_code
       @country = request.location.city
 
-      @currency = @country.upcase == 'AU' ? 'AUD' : 'USD'
+      @currency = @country.upcase == 'AU' ? 'AU$' : '$'
     end
   end
 
